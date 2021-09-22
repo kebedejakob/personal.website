@@ -1,0 +1,37 @@
+{
+  "name": "techover-academy-portfolio",
+  "version": "1.0.0",
+  "description": "OPTIMIZE:  Pause Canvas when out of view Loading Animation Optimize image sizes Higher quality images for portoflio (allows for 100vw on smaller sizes)",
+  "main": "./src/index.js",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "node-sass": "^6.0.1"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "dev": "concurrently \"nodemon src/index.js\" \"npm run scss\"",
+    "deploy": "gcloud config set project techover-portfolio && gcloud app deploy",
+    "start": "node ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch src/style -o src/style",
+    "build-css": "node-sass --include-path scss src/style/style.scss src/style/style.css",
+    "watch-css": "nodemon -e src/style -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmattbergstrom/web_template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmattbergstrom/web_template/issues"
+  },
+  "homepage": "https://github.com/dmattbergstrom/web_template#readme"
+}
