@@ -31,9 +31,19 @@ Want some support? Ask questions in the Techover Academy Slack **#help** channel
 
 ## Where to find everything
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+You will find all the required images in the `/src/img` folder.
+You will find all the required scripts in the `/src/scripts` folder.
+You will find all the required CSS files in the `/src/styles` folder.
 
 There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+
+## How to run the project
+
+1. Open up the commandline
+2. Navigate to this project folder
+3. Run `npm i --save`
+4. Start the website by running `npm run dev`
+5. Visit the website in your browser on the URL `http://localhost:3000`
 
 ## Building your project
 
