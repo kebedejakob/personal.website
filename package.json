@@ -19,13 +19,11 @@
   },
   "scripts": {
     "dev": "nodemon src/index.js -e ejs,js,css,html,jpg,png",
-    "dev-scss": "concurrently \"nodemon src/index.js\" \"npm run scss\"",
-    "deploy": "gcloud config set project techover-portfolio && gcloud app deploy",
+    "dev-scss": "concurrently \"nodemon src/index.js -e ejs,js,css,html,jpg,png,scss\" \"npm run scss\"",
+    "deploy": "git add . && git commit -m \"deploying...\" && heroku login && heroku create && git push heroku main",
     "start": "node ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --watch src/style -o src/style",
-    "build-css": "node-sass --include-path scss src/style/style.scss src/style/style.css",
-    "watch-css": "nodemon -e src/style -x \"npm run build-css\""
+    "scss": "node-sass --watch src/style -o src/style"
   },
   "repository": {
     "type": "git",
