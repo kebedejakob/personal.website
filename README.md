@@ -2,7 +2,7 @@
 
 ![Build your Techover Academy Portfolio](./preview.png)
 
-## Welcome! 👋
+## Welcome Everyone! 👋
 
 Thank you for attempting to build this project.
 
