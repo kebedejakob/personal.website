@@ -153,6 +153,7 @@ transform: rotate(90deg);
  }
 }
 
+
 a {
   color: inherit;
   text-decoration: none;
@@ -187,13 +188,14 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /**background-image: linear-gradient(to bottom right,rgb(144, 212, 233),#fff); **/
-  background-color: black;
+  background: rgb(169, 220, 236);
+  
   
   }
   
   .introText{
   font-size: 20px;
+
   }
 
   a{
@@ -204,7 +206,9 @@ body {
   
 
   .introGreet{
-    color: #ed5565
+    color: #fff;
+    font-size: 40px;
+    font-family: "quicksand", sans-serif;
   }
 
   .navbar{
@@ -270,8 +274,9 @@ body {
   .intro-picture{
     border-radius: 50%;
     align-items: center;
-    width: 250px;
+    width: 300px;
     justify-content: center;
+  
    
   }
   
@@ -308,8 +313,7 @@ body {
   
   #target {
     font-size: 30px;
-    color:#fff;
-    
+    font-weight: 400;
   }
   
   
@@ -319,7 +323,7 @@ body {
   
   .icon{
   
-    height: 20px;
+    height: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -329,7 +333,7 @@ body {
   
   .icon:hover{
   transition: all 0.2s;
-  height: 30px;
+  height: 35px;
   cursor: pointer;
   
   }
@@ -337,7 +341,8 @@ body {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    width: 3%;
+    width: 5%;
+    margin-top: 20px;
     
   }
 
@@ -348,17 +353,17 @@ body {
     padding: 12px 20px;
     font-size: 22px;
     font-family: sans-serif;
-    color: var(--white);
-    background: none;
+    color: var(--primary-darkest);
+    background: white;
     
   }
   .bold{
     font-weight: 900;
   }
   .big-button:hover{
-    background:var(--white);
+    
     transition: all 0,5s;
-    color: black;
+    
   }
   .big-button i{
     position: relative;
@@ -506,4 +511,8 @@ body {
 
 #about-me p{
   font-size: 16px;
+}
+
+.about-me-techover{
+  color: var(--primary);
 }

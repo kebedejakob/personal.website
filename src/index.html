@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>YOUR_NAME PORTFOLIO</title>
+    <title>FullstackjAck</title>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
@@ -13,12 +13,16 @@
       media="all"
       rel="stylesheet"
     />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+      </style>
+
     <link rel="stylesheet" href="style/materialize.min.css" />
     <link rel="stylesheet" href="style/padding-margin-helpers.css" />
 
     <!-- CSS WE HAVE PROVIDED FOR YOU -->
     <link rel="stylesheet" href="style/style.css" />
-    <link rel='shortcut icon' href='favicon.png' type='image/x-icon'/ >
+    <link rel='shortcut icon' href='favicon.png' type='image/x-icon' >
 
     <!-- HOSTED PLUGINS THAT WILL MAKE YOUR LIFE EASIER -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
@@ -42,7 +46,7 @@
       import { type } from './scripts/typical.js';
       const target = document.querySelector("#target");
 
-      type(target, 'And Im a Fullstack Developer!', 2500,'Living my life one undefined error at the time', 1000, 'If your code works on the first try.....you´ve done something wrong.', 1000, 'Click on my picture to skip absolutely everything about myself and just contact me :)',900);
+      type(target, 'And Im a Fullstack Developer!', 2500,'Living my life one undefined error at the time', 1000, 'If your code works on the first try.....you´ve done something wrong.', 1000,);
    </script>
 
   <div class="intro-container" id="intro">
@@ -59,18 +63,19 @@
     </div>
      <div class="introText">
       <h1>  
-        <span class="introGreet">Hello! Nice to meet you. </span> 
-              <br>
-        <span class="introGreet">I'm Jakob Kebede</span>
+        <span class="introGreet">Hello and Welcome! </span> 
+              
+        <span class="introGreet">I'm Jakob Kebede :)</span>
         </h1>
         </div> 
         <div id="target"></div>
         
-
+          <a href="#portfolio">  
         <button class="big-button">View my Work
           <i class="mdi mdi-arrow-right"></i>
         </button>
-  </div>
+          </a>
+      </div>
   
   
     <div class="navbar-container" >
@@ -161,7 +166,12 @@
     <div class="col m6 s12" id="about-me">
       <img src="img/me.png" alt="">
       <h4> Who this? </h4>
-      <p>I'm a Front-End Developer who has attended <a target="_blank" href="https://www.academy.techover.nu/home49768186">Techover Academy</a> in Stockholm, Sweden</p>
+      <p>I'm a Full-Stack Developer and attended the <a class="about-me-techover" target="_blank" href="https://www.academy.techover.nu/home49768186">Techover Academy</a> in Stockholm, Sweden, They provided me with the most of the programming knowledge I posses today. Check the bars or my CV for what languages and programming skills I master.</p>
+      
+  <p> Big part of what I know at this point is from the academy but i've also completed different Udemy Courses to further enhance my programming skills. </p> 
+      <p>
+      Besides Developing, I love traveling, spending time with friends, and sports specially football and boxing. I'm from Sweden and recently moved out from Vaggeryd, Jönköping to Lund.    
+      </p>
     </div>
   
   <div id="bars-container" class="row col m6 s12 waypoint" data-animation="slide-in-right">
@@ -193,11 +203,11 @@
     </div>
 
     <div class="bar">
-      <div id="react" class="fill">
-        <div class="tag">React</div>
+      <div id="git" class="fill">
+        <div class="tag">Git</div>
       </div>
       <span>
-        90%
+        100%
       </span>
     </div>
 
@@ -211,20 +221,11 @@
     </div>
 
     <div class="bar">
-      <div id="redux" class="fill">
-        <div class="tag">Redux</div>
+      <div id="react" class="fill">
+        <div class="tag">React</div>
       </div>
       <span>
-        85%
-      </span>
-    </div>
-
-    <div class="bar">
-      <div id="express" class="fill">
-        <div class="tag">Express</div>
-      </div>
-      <span>
-        85%
+        90%
       </span>
     </div>
 
@@ -238,11 +239,20 @@
     </div>
 
     <div class="bar">
+      <div id="express" class="fill">
+        <div class="tag">Express</div>
+      </div>
+      <span>
+        85%
+      </span>
+    </div>
+
+    <div class="bar">
       <div id="rest" class="fill">
         <div class="tag">Rest API</div>
       </div>
       <span>
-        90%
+        85%
       </span>
     </div>
 
@@ -251,16 +261,16 @@
         <div class="tag">NPM</div>
       </div>
       <span>
-        90%
+        85%
       </span>
     </div>
 
     <div class="bar">
-      <div id="git" class="fill">
-        <div class="tag">Git</div>
+      <div id="redux" class="fill">
+        <div class="tag">Redux</div>
       </div>
       <span>
-        90%
+        85%
       </span>
     </div>
   
@@ -283,13 +293,11 @@
 
       <div class="portfolio-container">
 
-      
-
-
-
-
-
       </div>
+
+
+
+      <div class="contact-container" id></div>
 
     <!-- Preloads images so that there is no lag when browsing the site: -->
     <div id="preload">
