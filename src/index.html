@@ -13,6 +13,8 @@
       media="all"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style/materialize.min.css" />
+    <link rel="stylesheet" href="style/padding-margin-helpers.css" />
 
     <!-- CSS WE HAVE PROVIDED FOR YOU -->
     <link rel="stylesheet" href="style/style.css" />
@@ -28,13 +30,267 @@
     <script src="scripts/pt.min.js"></script>
     <script src="scripts/index.js"></script>
     <script src="scripts/modal.js"></script>
-    
+    <script src='scripts/typical.js'></script>
+    <script src='scripts/materialize.min.js'></script>
+
   </head>
 
   <body>
 
     <!-- Start writing your HTML code here -->
-    <h1>HELLO MY NAME IS YOUR_NAME</h1>
+    <script type="module" >
+      import { type } from './scripts/typical.js';
+      const target = document.querySelector("#target");
+
+      type(target, 'And Im a Fullstack Developer!', 2500,'Living my life one undefined error at the time', 1000, 'If your code works on the first try.....you´ve done something wrong.', 1000, 'Click on my picture to skip absolutely everything about myself and just contact me :)',900);
+   </script>
+
+  <div class="intro-container" id="intro">
+    <a href="#contact"> 
+    <img class="intro-picture" src="img/jakob1.JPG" alt="">
+    </a>
+    <div class="intro-icons">
+    <a href ="https://www.linkedin.com/in/jakob-kebede-628370124/">
+      <img class="icon" src="img/linked-in.png"     alt=""> 
+    </a>   
+      <a href ="https://github.com/kebedejakob">
+        <img class="icon" src="img/github-bild.png" alt="">   
+      </a>
+    </div>
+     <div class="introText">
+      <h1>  
+        <span class="introGreet">Hello! Nice to meet you. </span> 
+              <br>
+        <span class="introGreet">I'm Jakob Kebede</span>
+        </h1>
+        </div> 
+        <div id="target"></div>
+        
+
+        <button class="big-button">View my Work
+          <i class="mdi mdi-arrow-right"></i>
+        </button>
+  </div>
+  
+  
+    <div class="navbar-container" >
+      <div class="navbar">
+  
+        <div class="nav-left">
+          <div class="home"><a href ="#intro">Home</a></div>
+          <div class="about"><a href="#about" >About</a></div>
+          <div class="portfolio"><a href ="#portfolio">Portfolio</a></div>
+          <div class="contact"> <a href ="#contact">Contact</a></div>
+        </div>
+  
+        <div class="logo-navbar">
+          <a href="https://www.academy.techover.nu/home49768186">
+          <img src="img/techover-logo-white.png" alt="">
+          </a>
+        </div>
+  
+      </div>
+      
+      
+  
+  
+    </div>
+
+
+
+ <section class="about-section" id="about">
+
+
+  
+  
+  <div class="row col s12">
+  <h2 data-animation="slide-in-left">About</h2> 
+    <br>
+    <hr>
+  
+
+</div>
+
+<!--   HEXAGONS       -->
+  <div class="row col s12">
+  <div class="hexagon-container col s6 m3">
+    <div class="hexagon"> 
+<i class="mdi mdi-speedometer"></i>
+    </div>
+    <h5>On time</h5>
+    <p>Making sure we set and reach deadlines is my specialty</p>
+    </div>
+  
+ 
+  
+  
+  <div class="hexagon-container col s6 m3">
+    <div class="hexagon"> 
+<i class="mdi mdi-speedometer"></i>
+    </div>
+    <h5>Results</h5>
+    <p>Deliver results not just in time but also with quality.</p>
+    </div>
+
+  
+  <div class="hexagon-container col s6 m3">
+    <div class="hexagon"> 
+<i class="mdi mdi-speedometer"></i>
+    </div>
+    <h5>Innovative</h5>
+    <p>I always bring new ideas of improvement to the table.</p>
+    </div>
+  
+
+  
+  <div class="hexagon-container col s6 m3">
+    <div class="hexagon"> 
+<i class="mdi mdi-speedometer"></i>
+    </div>
+    <h5>Responsive</h5>
+    <p>My layouts will work on any device, big or small, try this website out :)</p>
+    </div>
+  
+  </div>
+  
+  <!--  BARS!!  -->
+  
+  
+  <div class="pr40 pl40 pb100 row">
+  
+    <div class="col m6 s12" id="about-me">
+      <img src="img/me.png" alt="">
+      <h4> Who this? </h4>
+      <p>I'm a Front-End Developer who has attended <a target="_blank" href="https://www.academy.techover.nu/home49768186">Techover Academy</a> in Stockholm, Sweden</p>
+    </div>
+  
+  <div id="bars-container" class="row col m6 s12 waypoint" data-animation="slide-in-right">
+    <div class="bar">
+      <div id="css" class="fill">
+        <div class="tag">CSS</div>
+      </div>
+      <span>
+        100%
+      </span>
+    </div>
+ 
+    <div class="bar">
+      <div id="html" class="fill">
+        <div class="tag">HTML</div>
+      </div>
+      <span>
+        100%
+      </span>
+    </div>
+
+    <div class="bar">
+      <div id="javascript" class="fill">
+        <div class="tag">Javascript</div>
+      </div>
+      <span>
+        100%
+      </span>
+    </div>
+
+    <div class="bar">
+      <div id="react" class="fill">
+        <div class="tag">React</div>
+      </div>
+      <span>
+        90%
+      </span>
+    </div>
+
+    <div class="bar">
+      <div id="node" class="fill">
+        <div class="tag">Node.Js</div>
+      </div>
+      <span>
+        90%
+      </span>
+    </div>
+
+    <div class="bar">
+      <div id="redux" class="fill">
+        <div class="tag">Redux</div>
+      </div>
+      <span>
+        85%
+      </span>
+    </div>
+
+    <div class="bar">
+      <div id="express" class="fill">
+        <div class="tag">Express</div>
+      </div>
+      <span>
+        85%
+      </span>
+    </div>
+
+    <div class="bar">
+      <div id="mongo" class="fill">
+        <div class="tag">MongoDB</div>
+      </div>
+      <span>
+        90%
+      </span>
+    </div>
+
+    <div class="bar">
+      <div id="rest" class="fill">
+        <div class="tag">Rest API</div>
+      </div>
+      <span>
+        90%
+      </span>
+    </div>
+
+    <div class="bar">
+      <div id="npm" class="fill">
+        <div class="tag">NPM</div>
+      </div>
+      <span>
+        90%
+      </span>
+    </div>
+
+    <div class="bar">
+      <div id="git" class="fill">
+        <div class="tag">Git</div>
+      </div>
+      <span>
+        90%
+      </span>
+    </div>
+  
+  </div>
+  
+  <div class="col m12 s12" id="links">
+    <a href="mailto:kebedejakob@gmail.com">Email Me</a>
+    <a href="cv/YOUR_NAME.pdf">Download CV</a>
+  </div>
+
+</div>
+ </section>
+  
+
+
+
+
+     
+
+
+      <div class="portfolio-container">
+
+      
+
+
+
+
+
+      </div>
+
     <!-- Preloads images so that there is no lag when browsing the site: -->
     <div id="preload">
       <img src="img/me.png" />
